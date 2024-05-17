@@ -1,0 +1,24 @@
+.cal-grid .grid-cols-1 > div,  /* Target first column cells */
+.cal-grid .font-normal  /* Target header row cells */ {
+  position: sticky; /* Use sticky positioning for header row */
+  z-index: 10;
+  background: #ffffff;
+  top: 0; /* Stick to top for header row */
+  left: 0; /* Stick to left for first column (optional) */
+  text-align: left;
+  
+}
+
+/* Remove fixed positioning from empty cell class */
+.cal-grid .z-high {
+
+  z-index: 999; /* Maintain high z-index for stacking */
+}
+
+
+.header-cell {
+  width: 60px; /* or any desired width */
+  height: 30px; /* or any desired height */
+}
+
+
